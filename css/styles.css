@@ -254,6 +254,7 @@
   background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.6)), to(rgba(29, 29, 29, 0.3))), url("../img/self.jpg") center top;
   background: linear-gradient(to right, rgba(29, 29, 29, 0.6), rgba(29, 29, 29, 0.3)), url("../img/self.jpg") center top;
   background-size: cover;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
