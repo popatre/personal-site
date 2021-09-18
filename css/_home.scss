@@ -1,0 +1,59 @@
+.home {
+    height: 100%;
+    padding-top: 20vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: 
+        linear-gradient(
+        to right, 
+        rgba($primary-color, 0.9),
+        rgba($primary-color, 0.3)
+        );
+    //     url('../img/model-1.jpg') center top;
+    // background-size: cover;
+
+    h2 {
+        font-family: 'Nunito Sans', sans-serif;
+
+        .hello {
+            color: red;
+            font-size: 1.5em;
+            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+            -moz-animation: fadein 2s; /* Firefox < 16 */
+            -ms-animation: fadein 2s; /* Internet Explorer */
+            -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+        }
+        .myname {
+            // -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+            // -moz-animation: fadein 4s; /* Firefox < 16 */
+            // -ms-animation: fadein 4s; /* Internet Explorer */
+            // -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation-delay: 600ms;
+            animation: fadein 8s;
+            
+        }
+    }
+
+    &__name {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid set-text-color($primary-color);
+
+        &--last {
+            color: $secondary-color;
+            font-weight: 700;
+        }
+
+        
+    }
+    
+    .dev-subs {
+        margin-top: 2.2em;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
+
+

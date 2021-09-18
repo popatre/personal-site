@@ -1,0 +1,94 @@
+@include media-md {
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+        left: 0%;    /* change this and width for full screen */
+    width: 100vw;
+
+        .menu-nav {
+            display: block; 
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &__item {
+                display: inline;
+                padding-right: 2.2rem;
+            }
+
+            &__link {
+                font-size:1.5rem;
+            }
+        }
+    }
+
+    #tester { 
+
+        height: 300px;
+      }
+
+    
+
+    .about__bio {
+        font-size:1.5rem;
+
+        &-image {
+            background-attachment: fixed;
+            background-position: 0% 40%;
+        }
+    }
+
+    .projects {
+        &__bio-image {
+            height: 40vh;
+        }
+        &-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .text-secondary {
+            font-size:3rem;
+        }
+    }
+
+    .contact-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include media-lg {
+    .projects {
+
+        &-items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .contact-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about__bio-image {
+        height: 50vh;
+        background-attachment:cover;
+        background-position: 0% 30%;
+        margin: 0 auto;
+        
+        
+        
+    }
+    #tester { 
+
+        height: 450px;
+      }
+
+}
+
+@include media-xl {
+    .projects__bio-image {
+        height: 50vh;
+    }
+}
