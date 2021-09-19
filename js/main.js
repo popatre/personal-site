@@ -35,12 +35,14 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.querySelector(".nav").style.top = "0";
   } else {
+    setTimeout(() => {
     document.querySelector(".nav").style.top = "-75px";
+  }, 500);
   }
   prevScrollpos = currentScrollPos;
 }
 
-
+// name animation // 
 anime({
   targets: '#tester path',
   strokeDashoffset: [anime.setDashoffset, 0],
