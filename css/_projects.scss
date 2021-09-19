@@ -57,15 +57,16 @@
             @include transition-ease;
         }
 
-        &:hover {
-            &::after {
-                top: 0;
-                opacity: 0.9;
-            }
-            .projects__btn {
-                opacity: 1;
-            }
-        }
+        // &:hover {
+        //     &::after {
+        //         top: 0;
+        //         opacity: 0.9;
+        //         // Looks at this fix for iOS // 
+        //     }
+        //     .projects__btn {
+        //         opacity: 1;
+        //     }
+        // }
     }
 
     &__btns {
@@ -103,3 +104,15 @@
     }
 }
 
+.slider {
+    
+            .projects__btn {
+                opacity: 1;
+            }
+        }
+
+        .projects__item.special::after {
+            top: 0;
+            opacity: 0.9;
+            // Looks at this fix for iOS // 
+        }

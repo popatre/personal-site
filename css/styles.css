@@ -390,15 +390,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-.projects__item:hover::after {
-  top: 0;
-  opacity: 0.9;
-}
-
-.projects__item:hover .projects__btn {
-  opacity: 1;
-}
-
 .projects__btns {
   position: absolute;
   top: 0;
@@ -439,6 +430,15 @@
 .projects footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
           transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.slider .projects__btn {
+  opacity: 1;
+}
+
+.projects__item.special::after {
+  top: 0;
+  opacity: 0.9;
 }
 
 .contact {

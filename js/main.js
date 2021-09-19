@@ -35,32 +35,25 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.querySelector(".nav").style.top = "0";
   } else {
-    setTimeout(() => {
+    
     document.querySelector(".nav").style.top = "-75px";
-  }, 500);
   }
   prevScrollpos = currentScrollPos;
 }
 
-// name animation // 
-anime({
-  targets: '#tester path',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInElastic(1, 0.9)',
-  duration: 2500,
-  delay: function(el, i) { return i * 200 },
-  direction: 'alternate',
-  loop: false
-});
 
-//  timeout for name animation 
 
-setTimeout(() => {
-  let aaa = document.querySelector('#tester');
-aaa.classList.add('add');
-}, 9000);
+let projectSlider = document.querySelectorAll(".projects__item")
 
-setTimeout(() => {
-  let aaa = document.querySelector('#tester');
-aaa.classList.add('addtwo');
-}, 9000);
+projectSlider.forEach(a => a.addEventListener('click', function(){
+  this.classList.add("slider");
+  this.classList.add("special");
+  
+  setTimeout(() => {
+    this.classList.remove("special");
+    this.classList.add("slider");
+  }, 4000);
+
+}) ); 
+
+
