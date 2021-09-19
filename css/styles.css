@@ -250,8 +250,8 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.7)), to(rgba(29, 29, 29, 0.3))), url("../img/gaz.jpg") center top;
-  background: linear-gradient(to right, rgba(29, 29, 29, 0.7), rgba(29, 29, 29, 0.3)), url("../img/gaz.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.8)), to(rgba(29, 29, 29, 0.1))), url("../img/self1.jpg") center top;
+  background: linear-gradient(to right, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.1)), url("../img/self1.jpg") center top;
   background-size: cover;
   background-attachment: scroll;
   display: -webkit-box;
