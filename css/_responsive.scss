@@ -72,12 +72,10 @@
     }
 
     .about__bio-image {
-        height: 50vh;
+        height: 60vh;
         background-attachment:cover;
         background-position: 0% 30%;
         margin: 0 auto;
-        
-        
         
     }
     #tester { 
@@ -89,6 +87,6 @@
 
 @include media-xl {
     .projects__bio-image {
-        height: 50vh;
+        height: 60vh;
     }
 }

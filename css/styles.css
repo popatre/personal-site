@@ -251,10 +251,10 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.8)), to(rgba(29, 29, 29, 0.3))), url("../img/project-1.jpg") center top;
-  background: linear-gradient(to right, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.3)), url("../img/project-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.8)), to(rgba(29, 29, 29, 0.3))), url("../img/self.jpg") center top;
+  background: linear-gradient(to right, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.3)), url("../img/self.jpg") center top;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,7 +603,7 @@ footer {
         grid-template-columns: repeat(3, 1fr);
   }
   .about__bio-image {
-    height: 50vh;
+    height: 60vh;
     background-attachment: cover;
     background-position: 0% 30%;
     margin: 0 auto;
@@ -615,7 +615,7 @@ footer {
 
 @media screen and (min-width: 1600px) {
   .projects__bio-image {
-    height: 50vh;
+    height: 60vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
