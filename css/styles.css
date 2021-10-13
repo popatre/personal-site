@@ -42,12 +42,15 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.9)), to(rgba(29, 29, 29, 0.3)));
-  background: linear-gradient(to right, rgba(29, 29, 29, 0.9), rgba(29, 29, 29, 0.3));
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#000000), color-stop(#202020), to(#000000));
+  background-image: linear-gradient(to right top, #000000, #202020, #000000);
+  -webkit-animation: bg-animate 12s infinite alternate;
+          animation: bg-animate 12s infinite alternate;
+  background-size: 400%;
 }
 
 .home h2 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .home h2 .hello {
@@ -82,7 +85,25 @@
 
 .home .dev-subs {
   margin-top: 2.2em;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@-webkit-keyframes bg-animate {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes bg-animate {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 .menu-btn {
@@ -248,7 +269,7 @@
 }
 
 .about__bio-image {
-  height: 45vh;
+  height: 50vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.8)), to(rgba(29, 29, 29, 0.1))), url("../img/self1.jpg") center top;
   background: linear-gradient(to right, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.1)), url("../img/self1.jpg") center top;
@@ -328,13 +349,13 @@
 }
 
 .projects__bio-image {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.9)), to(rgba(29, 29, 29, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(29, 29, 29, 0.9), rgba(29, 29, 29, 0.3)), url("../img/model-1.jpg") center top;
+  background: linear-gradient(-45deg, #178c7a, #343232, #08fdd8, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease 1;
+          animation: gradient 15s ease 1;
   font-family: "Open Sans", sans-serif;
-  background-size: cover;
-  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,7 +399,7 @@
 }
 
 .projects__item::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 0;
@@ -439,6 +460,30 @@
 .projects__item.special::after {
   top: 0;
   opacity: 0.9;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .contact {
@@ -577,7 +622,7 @@ footer {
     background-position: 0% 40%;
   }
   .projects__bio-image {
-    height: 40vh;
+    height: 25vh;
   }
   .projects-items {
     -ms-grid-columns: (1fr)[2];
@@ -602,7 +647,7 @@ footer {
         grid-template-columns: repeat(3, 1fr);
   }
   .about__bio-image {
-    height: 70vh;
+    height: 50vh;
     background-attachment: cover;
     background-position: 0% 30%;
     margin: 0 auto;

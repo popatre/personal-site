@@ -1,59 +1,59 @@
 .home {
-    height: 100%;
-    padding-top: 20vh;
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
-    background: 
-        linear-gradient(
-        to right, 
-        rgba($primary-color, 0.9),
-        rgba($primary-color, 0.3)
-        );
-    //     url('../img/model-1.jpg') center top;
-    // background-size: cover;
+  height: 100%;
+  padding-top: 20vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  //   background: black;
+  background-image: linear-gradient(to right top, #000000, #202020, #000000);
+  animation: bg-animate 12s infinite alternate;
+  background-size: 400%;
 
-    h2 {
-        font-family: 'Nunito Sans', sans-serif;
+  h2 {
+    font-family: "Nunito Sans", sans-serif;
 
-        .hello {
-            color: red;
-            font-size: 1.5em;
-            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-            -moz-animation: fadein 2s; /* Firefox < 16 */
-            -ms-animation: fadein 2s; /* Internet Explorer */
-            -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-        }
-        .myname {
-            // -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-            // -moz-animation: fadein 4s; /* Firefox < 16 */
-            // -ms-animation: fadein 4s; /* Internet Explorer */
-            // -o-animation: fadein 4s; /* Opera < 12.1 */
-            animation-delay: 600ms;
-            animation: fadein 8s;
-            
-        }
+    .hello {
+      color: red;
+      font-size: 1.5em;
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+      animation: fadein 2s;
     }
-
-    &__name {
-        font-size: 5rem;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        border-bottom: 2px solid set-text-color($primary-color);
-
-        &--last {
-            color: $secondary-color;
-            font-weight: 700;
-        }
-
-        
+    .myname {
+      // -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+      // -moz-animation: fadein 4s; /* Firefox < 16 */
+      // -ms-animation: fadein 4s; /* Internet Explorer */
+      // -o-animation: fadein 4s; /* Opera < 12.1 */
+      animation-delay: 600ms;
+      animation: fadein 8s;
     }
-    
-    .dev-subs {
-        margin-top: 2.2em;
-        font-family: 'Nunito Sans', sans-serif;
+  }
+
+  &__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+
+    &--last {
+      color: $secondary-color;
+      font-weight: 700;
     }
+  }
+
+  .dev-subs {
+    margin-top: 2.2em;
+    font-family: "Nunito Sans", sans-serif;
+  }
 }
 
-
+@keyframes bg-animate {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
