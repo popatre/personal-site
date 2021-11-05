@@ -54,7 +54,7 @@
 }
 
 .home h2 .hello {
-  color: red;
+  color: #08fdd8;
   font-size: 1.5em;
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
@@ -388,6 +388,13 @@
 }
 
 .projects__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   border-bottom: 5px solid #08fdd8;
   overflow: hidden;
@@ -428,10 +435,8 @@
 }
 
 .projects__btn {
-  opacity: 0;
+  visibility: hidden;
   color: #000;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .projects__btn:hover {
@@ -453,8 +458,20 @@
           transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.dora {
+  padding: 10% 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.jon {
+  padding: 10% 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
 .slider .projects__btn {
-  opacity: 1;
+  visibility: visible;
 }
 
 .projects__item.special::after {
@@ -610,14 +627,14 @@ footer {
   }
   .nav .menu-nav__link {
     font-size: 1.5rem;
-    background-image: -webkit-gradient(linear, left top, right top, from(#1d1d1d), to(green));
-    background-image: linear-gradient(90deg, #1d1d1d, green);
+    background-image: -webkit-gradient(linear, left top, right top, from(#1d1d1d), to(#08fdd8));
+    background-image: linear-gradient(90deg, #1d1d1d, #08fdd8);
     background-size: 0% 1px;
     background-repeat: no-repeat;
     background-position: left bottom;
   }
   .nav .menu-nav__link:hover {
-    background-size: 100% 3px;
+    background-size: 100% 1.5px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
@@ -664,12 +681,6 @@ footer {
   }
   #tester {
     height: 450px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .projects__bio-image {
-    height: 50vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
