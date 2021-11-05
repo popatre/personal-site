@@ -459,12 +459,21 @@
 }
 
 .dora {
+  font-family: "Open Sans", sans-serif;
   padding: 10% 0;
   text-align: center;
   line-height: 1.4;
 }
 
 .jon {
+  font-family: "Open Sans", sans-serif;
+  padding: 10% 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.blurb {
+  font-family: "Open Sans", sans-serif;
   padding: 10% 0;
   text-align: center;
   line-height: 1.4;
