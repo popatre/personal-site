@@ -558,7 +558,9 @@ body {
   line-height: 1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
 }
 
@@ -610,24 +612,31 @@ footer {
   -webkit-transition: all 2s;
   transition: all 2s;
   height: 200px;
+  margin: 2em 0;
 }
 
 @media screen and (min-width: 768px) {
+  .home {
+    padding-top: 10vh;
+  }
   .menu-btn {
     visibility: hidden;
   }
+  header {
+    position: relative;
+  }
   .nav {
+    position: relative;
     visibility: visible;
     left: 0%;
     /* change this and width for full screen */
     width: 100vw;
   }
   .nav .menu-nav {
-    display: block;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    height: 100%;
-    background: transparent;
+    display: block;
+    height: 69px;
     text-align: right;
   }
   .nav .menu-nav__item {
@@ -635,7 +644,7 @@ footer {
     padding-right: 2.2rem;
   }
   .nav .menu-nav__link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-image: -webkit-gradient(linear, left top, right top, from(#1d1d1d), to(#08fdd8));
     background-image: linear-gradient(90deg, #1d1d1d, #08fdd8);
     background-size: 0% 1px;
@@ -648,7 +657,11 @@ footer {
     transition: all 0.5s ease-in-out;
   }
   #tester {
-    height: 300px;
+    width: 60%;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    height: 40vh;
+    margin: 2em 0;
   }
   .about__bio {
     font-size: 1.5rem;
@@ -658,7 +671,7 @@ footer {
     background-position: 0% 40%;
   }
   .projects__bio-image {
-    height: 25vh;
+    height: 30vh;
   }
   .projects-items {
     -ms-grid-columns: (1fr)[2];
@@ -674,9 +687,15 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  .projects__bio-image {
+    height: 35vh;
+  }
   .projects-items {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
   }
   .contact-list {
     -ms-grid-columns: (1fr)[3];
@@ -689,7 +708,17 @@ footer {
     margin: 0 auto;
   }
   #tester {
-    height: 450px;
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects__bio-image {
+    height: 35vh;
+  }
+  .projects-items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 /*# sourceMappingURL=styles.css.map */

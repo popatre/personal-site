@@ -1,18 +1,28 @@
 @include media-md {
+    .home {
+        padding-top: 10vh;
+    }
     .menu-btn {
         visibility: hidden;
     }
+    header {
+        position: relative;
+        // delete if want fixed menu bar
+    }
 
     .nav {
+        // return to fixed for fixed menu bar
+        position: relative;
         visibility: visible;
         left: 0%; /* change this and width for full screen */
         width: 100vw;
 
         .menu-nav {
-            display: block;
             transform: translateY(0);
-            height: 100%;
-            background: transparent;
+            display: block;
+
+            height: 69px;
+            // background: transparent;
             text-align: right;
 
             &__item {
@@ -21,7 +31,7 @@
             }
 
             &__link {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 background-image: linear-gradient(
                     90deg,
                     $primary-color,
@@ -40,7 +50,11 @@
     }
 
     #tester {
-        height: 300px;
+        // this is the name animation
+        width: 60%;
+        transition: all 2s;
+        height: 40vh;
+        margin: 2em 0;
     }
 
     .about__bio {
@@ -54,7 +68,7 @@
 
     .projects {
         &__bio-image {
-            height: 25vh;
+            height: 30vh;
         }
         &-items {
             grid-template-columns: repeat(2, 1fr);
@@ -72,8 +86,15 @@
 
 @include media-lg {
     .projects {
+        &__bio-image {
+            height: 35vh;
+        }
         &-items {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .text-secondary {
+            font-size: 3rem;
         }
     }
     .contact-list {
@@ -87,9 +108,17 @@
         margin: 0 auto;
     }
     #tester {
-        height: 450px;
+        height: 40vh;
     }
 }
 
 @include media-xl {
+    .projects {
+        &__bio-image {
+            height: 35vh;
+        }
+        &-items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }
