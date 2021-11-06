@@ -19,15 +19,26 @@
             -moz-animation: fadein 2s; /* Firefox < 16 */
             -ms-animation: fadein 2s; /* Internet Explorer */
             -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+            // animation-delay: 1000ms;
+            // animation: fadein 2s;
+            opacity: 1;
+            animation: fade 4s ease-in;
+        }
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
         .myname {
             // -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
             // -moz-animation: fadein 4s; /* Firefox < 16 */
             // -ms-animation: fadein 4s; /* Internet Explorer */
             // -o-animation: fadein 4s; /* Opera < 12.1 */
-            animation-delay: 600ms;
-            animation: fadein 8s;
+            opacity: 1;
+            animation: fade 10s ease-in;
         }
     }
 

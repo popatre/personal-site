@@ -58,17 +58,39 @@
   font-size: 1.5em;
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
   /* Firefox < 16 */
+  -ms-animation: fadein 2s;
   /* Internet Explorer */
+  -o-animation: fadein 2s;
   /* Opera < 12.1 */
-  animation: fadein 2s;
+  opacity: 1;
+  -webkit-animation: fade 4s ease-in;
+          animation: fade 4s ease-in;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .home h2 .myname {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-  -webkit-animation: fadein 8s;
-          animation: fadein 8s;
+  opacity: 1;
+  -webkit-animation: fade 10s ease-in;
+          animation: fade 10s ease-in;
 }
 
 .home__name {
@@ -624,6 +646,8 @@ footer {
   }
   header {
     position: relative;
+    margin: 0;
+    padding: 0;
   }
   .nav {
     position: relative;
@@ -636,7 +660,7 @@ footer {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     display: block;
-    height: 69px;
+    height: 75px;
     text-align: right;
   }
   .nav .menu-nav__item {
@@ -671,7 +695,7 @@ footer {
     background-position: 0% 40%;
   }
   .projects__bio-image {
-    height: 30vh;
+    height: 25vh;
   }
   .projects-items {
     -ms-grid-columns: (1fr)[2];
@@ -688,7 +712,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   .projects__bio-image {
-    height: 35vh;
+    height: 26vh;
   }
   .projects-items {
     -ms-grid-columns: (1fr)[2];
