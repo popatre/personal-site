@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "http://www.jonmcg.co.uk/*"
+  to = "https://www.jonmcg.co.uk/*"
+  force = true
