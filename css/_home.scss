@@ -63,6 +63,10 @@
     }
 }
 
+#tester {
+    visibility: hidden;
+}
+
 @keyframes bg-animate {
     0% {
         background-position: left;

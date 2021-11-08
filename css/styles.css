@@ -114,6 +114,10 @@
           animation: fade 10s ease-in;
 }
 
+#tester {
+  visibility: hidden;
+}
+
 @-webkit-keyframes bg-animate {
   0% {
     background-position: left;
