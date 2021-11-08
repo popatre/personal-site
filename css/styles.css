@@ -108,6 +108,10 @@
 .home .dev-subs {
   margin-top: 2.2em;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  visibility: hidden;
+  -webkit-animation: fade 10s ease-in;
+          animation: fade 10s ease-in;
 }
 
 @-webkit-keyframes bg-animate {
