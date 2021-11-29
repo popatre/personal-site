@@ -83,6 +83,7 @@
 
     .contact-list {
         grid-template-columns: repeat(2, 1fr);
+        text-align: center;
     }
 }
 
@@ -100,24 +101,53 @@
         }
     }
     .contact-list {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about__bio-image {
-        height: 50vh;
+        // height: 50vh;
         background-attachment: cover;
         background-position: 0% 30%;
         margin: 0 auto;
     }
+    .bio-self {
+        width: 90%;
+        margin: 2em 0;
+    }
+
+    .about__bio {
+        width: 80%;
+        text-align: center;
+
+        .text-secondary {
+            padding-top: 3em;
+        }
+        p {
+            width: 90%;
+            margin: 0 auto;
+            padding: 1em 0;
+        }
+    }
     #tester {
         height: 40vh;
+    }
+    .row {
+        display: flex;
+        align-items: center;
+
+        .col {
+            width: 100%;
+            img {
+                max-width: 70%;
+            }
+        }
     }
 }
 
 @include media-xl {
     .projects {
         &__bio-image {
-            height: 26vh;
+            // height: 26vh;
         }
         &-items {
             grid-template-columns: repeat(3, 1fr);

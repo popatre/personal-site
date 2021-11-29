@@ -2,38 +2,36 @@
     padding-bottom: 2rem;
 
     &__bio-image {
-        height: 50vh;
+        // height: 50vh;
         width: 100%;
-        background: 
-        linear-gradient(
-        to right, 
-        rgba($primary-color, 0.8),
-        rgba($primary-color, 0.1)
-        ),
-        url('../img/self1.jpg') center top;
-        -webkit-background-size: auto 150%;
-        background-size: cover;
-        
-    background-attachment: scroll;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    font-family: $para-font;
+        background: linear-gradient(
+                to right,
+                rgba($primary-color, 0.8),
+                rgba($primary-color, 0.1)
+            ),
+            url("https://www.transparenttextures.com/patterns/black-scales.png");
+        // -webkit-background-size: auto 150%;
+        // background-size: cover;
+
+        background-attachment: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        font-family: $para-font;
 
         p {
-        margin-bottom: 2rem;
+            margin-bottom: 2rem;
         }
     }
-&__bio {
-    width: 80%;
-    text-align: center;
-    
+    &__bio {
+        width: 80%;
+        text-align: center;
 
-    .text-secondary {
-        padding-bottom: 1rem;
+        .text-secondary {
+            padding-bottom: 1rem;
         }
-    } 
+    }
 
     .jobs {
         width: 60vw;
@@ -45,10 +43,12 @@
 
         &__job {
             background: lighten($primary-color, 10%);
-            padding: 0.5rem;
+            padding: 1.1rem;
             border-bottom: 5px solid $secondary-color;
+            line-height: 1.5;
 
-            h2, h3 {
+            h2,
+            h3 {
                 margin: 0.5rem 0;
             }
 
@@ -61,13 +61,20 @@
     .social-icons {
         display: flex;
         flex-direction: column;
-
     }
 
     footer {
-        transform: 
-        rotate(90deg) 
-        translate(-3rem, -5rem);
+        transform: rotate(90deg) translate(-3rem, -5rem);
     }
 }
 
+.bio-self {
+    width: 50%;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    margin: 2em 0;
+}
+
+.bio-text {
+    line-height: 1.5;
+}

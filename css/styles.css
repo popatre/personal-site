@@ -299,11 +299,9 @@
 }
 
 .about__bio-image {
-  height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.8)), to(rgba(29, 29, 29, 0.1))), url("../img/self1.jpg") center top;
-  background: linear-gradient(to right, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.1)), url("../img/self1.jpg") center top;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.8)), to(rgba(29, 29, 29, 0.1))), url("https://www.transparenttextures.com/patterns/black-scales.png");
+  background: linear-gradient(to right, rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.1)), url("https://www.transparenttextures.com/patterns/black-scales.png");
   background-attachment: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,11 +345,13 @@
 
 .about .jobs__job {
   background: #373737;
-  padding: 0.5rem;
+  padding: 1.1rem;
   border-bottom: 5px solid #08fdd8;
+  line-height: 1.5;
 }
 
-.about .jobs__job h2, .about .jobs__job h3 {
+.about .jobs__job h2,
+.about .jobs__job h3 {
   margin: 0.5rem 0;
 }
 
@@ -372,6 +372,17 @@
 .about footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
           transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.bio-self {
+  width: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 2em 0;
+}
+
+.bio-text {
+  line-height: 1.5;
 }
 
 .projects {
@@ -544,7 +555,7 @@
 
 .contact {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 20vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,9 +567,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(29, 29, 29, 0.9)), to(rgba(29, 29, 29, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(29, 29, 29, 0.9), rgba(29, 29, 29, 0.3)), url("../img/model-1.jpg") center top;
-  background-size: cover;
+  background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
   font-family: "Open Sans", sans-serif;
 }
 
@@ -715,6 +724,7 @@ footer {
   .contact-list {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    text-align: center;
   }
 }
 
@@ -730,24 +740,50 @@ footer {
     font-size: 3rem;
   }
   .contact-list {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .about__bio-image {
-    height: 50vh;
     background-attachment: cover;
     background-position: 0% 30%;
     margin: 0 auto;
   }
+  .bio-self {
+    width: 90%;
+    margin: 2em 0;
+  }
+  .about__bio {
+    width: 80%;
+    text-align: center;
+  }
+  .about__bio .text-secondary {
+    padding-top: 3em;
+  }
+  .about__bio p {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 0;
+  }
   #tester {
     height: 40vh;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .row .col {
+    width: 100%;
+  }
+  .row .col img {
+    max-width: 70%;
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .projects__bio-image {
-    height: 35vh;
-  }
   .projects-items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
