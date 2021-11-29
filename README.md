@@ -2,6 +2,8 @@
 
 This is my personal portfolio website.
 
+A live version can be found: https://jonmcg.co.uk
+
 It makes use of the following:
 
 -   HTML5
