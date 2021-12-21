@@ -142,6 +142,9 @@
             }
         }
     }
+    .about .jobs {
+        width: 60vw;
+    }
 }
 
 @include media-xl {
