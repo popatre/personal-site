@@ -114,6 +114,10 @@
           animation: fade 10s ease-in;
 }
 
+.home .social-icons a {
+  margin-left: 1.9rem;
+}
+
 #tester {
   visibility: hidden;
 }
