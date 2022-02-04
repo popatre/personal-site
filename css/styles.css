@@ -598,6 +598,10 @@
   margin-top: 2rem;
 }
 
+.contact .social-icons a {
+  margin-left: 1rem;
+}
+
 body {
   background-color: #1d1d1d;
   color: #fff;
