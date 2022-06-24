@@ -167,9 +167,6 @@
 
 @include media-xl {
     .projects {
-        &__bio-image {
-            // height: 26vh;
-        }
         &-items {
             grid-template-columns: repeat(3, 1fr);
         }
