@@ -72,9 +72,9 @@
         &__bio-image {
             height: 25vh;
         }
-        &-items {
-            grid-template-columns: repeat(2, 1fr);
-        }
+        // &-items {
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
 
         .text-secondary {
             font-size: 3rem;
@@ -82,12 +82,12 @@
 
         &__others {
             width: 80%;
-            max-width: 700px;
+            max-width: 900px;
             margin-inline: auto;
         }
 
         &__others__grid {
-            grid-template-columns: repeat(2, 1fr);
+            // grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
     }

@@ -585,8 +585,9 @@
 .projects__others__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
 }
 
 .projects__others__card {
@@ -836,21 +837,15 @@ footer {
   .projects__bio-image {
     height: 25vh;
   }
-  .projects-items {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
   .projects .text-secondary {
     font-size: 3rem;
   }
   .projects__others {
     width: 80%;
-    max-width: 700px;
+    max-width: 900px;
     margin-inline: auto;
   }
   .projects__others__grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .contact-list {
