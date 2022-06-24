@@ -531,6 +531,15 @@
   left: 20%;
 }
 
+.projects__icons--others {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-block: 1em;
+}
+
 .projects__desc {
   width: 90%;
   color: #08fdd8;
@@ -541,9 +550,71 @@
   width: 80%;
   margin-inline: auto;
   line-height: 2;
-  word-spacing: 20px;
+  padding-block: 1em;
   font-style: italic;
   margin-bottom: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.projects__icons--icon {
+  max-width: 30%;
+  -webkit-filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(116deg) brightness(105%) contrast(99%);
+          filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(116deg) brightness(105%) contrast(99%);
+}
+
+.projects__icons--container p {
+  font-size: 12px;
+}
+
+.projects__others {
+  width: 90vw;
+  margin-inline: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.projects__others__title {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 2em;
+}
+
+.projects__others__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.projects__others__card {
+  border: 2px solid #08fdd8;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 10px;
+}
+
+.projects__others__card__content > p {
+  margin-block: 2em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.projects__others__card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.other__tech {
+  word-spacing: 20px;
+  font-style: italic;
+  color: #08fdd8;
+}
+
+.hide {
+  display: none;
 }
 
 .dora {
@@ -771,6 +842,16 @@ footer {
   }
   .projects .text-secondary {
     font-size: 3rem;
+  }
+  .projects__others {
+    width: 80%;
+    max-width: 700px;
+    margin-inline: auto;
+  }
+  .projects__others__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   .contact-list {
     -ms-grid-columns: (1fr)[2];

@@ -105,6 +105,12 @@
         left: 20%;
     }
 
+    &__icons--others {
+        display: flex;
+        justify-content: space-around;
+        padding-block: 1em;
+    }
+
     &__desc {
         width: 90%;
         color: $secondary-color;
@@ -115,10 +121,67 @@
         width: 80%;
         margin-inline: auto;
         line-height: 2;
-        word-spacing: 20px;
+        padding-block: 1em;
         font-style: italic;
         margin-bottom: 2em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
     }
+
+    &__icons--icon {
+        max-width: 30%;
+        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(116deg)
+            brightness(105%) contrast(99%);
+    }
+    &__icons--container {
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+.projects__others {
+    width: 90vw;
+    margin-inline: auto;
+    font-family: $para-font;
+
+    &__title {
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 2em;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__card {
+        border: 2px solid $secondary-color;
+        padding: 1em;
+        margin-top: 2em;
+        border-radius: 10px;
+
+        &__content > p {
+            margin-block: 2em;
+            text-align: center;
+            line-height: 1.5;
+        }
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+.other__tech {
+    word-spacing: 20px;
+    font-style: italic;
+    color: $secondary-color;
+}
+
+.hide {
+    display: none;
 }
 
 .dora {

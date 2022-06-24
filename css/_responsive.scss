@@ -79,6 +79,17 @@
         .text-secondary {
             font-size: 3rem;
         }
+
+        &__others {
+            width: 80%;
+            max-width: 700px;
+            margin-inline: auto;
+        }
+
+        &__others__grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
     }
 
     .contact-list {
