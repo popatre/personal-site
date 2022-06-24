@@ -437,6 +437,7 @@
 }
 
 .projects__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +449,9 @@
   border-bottom: 5px solid #08fdd8;
   overflow: hidden;
   cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px 5px #323131;
+          box-shadow: 0px 0px 10px 5px #323131;
+  border-radius: 10px;
 }
 
 .projects__item img {
@@ -465,6 +469,11 @@
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+}
+
+.projects__item:hover {
+  -webkit-filter: drop-shadow(0px 0px 5px #a4a2a2);
+          filter: drop-shadow(0px 0px 5px #a4a2a2);
 }
 
 .projects__btns {
@@ -505,6 +514,36 @@
 .projects footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
           transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.projects__icons {
+  position: absolute;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+  margin-inline: auto;
+  margin-bottom: 1em;
+  bottom: 10px;
+  left: 20%;
+}
+
+.projects__desc {
+  width: 90%;
+  color: #08fdd8;
+  margin-inline: auto;
+}
+
+.projects__tech__body {
+  width: 80%;
+  margin-inline: auto;
+  line-height: 2;
+  word-spacing: 20px;
+  font-style: italic;
+  margin-bottom: 2em;
 }
 
 .dora {
