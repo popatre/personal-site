@@ -538,6 +538,10 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-block: 1em;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
 }
 
 .projects__desc {
@@ -595,6 +599,7 @@
   padding: 1em;
   margin-top: 2em;
   border-radius: 10px;
+  position: relative;
 }
 
 .projects__others__card__content > p {
@@ -612,6 +617,7 @@
   word-spacing: 20px;
   font-style: italic;
   color: #08fdd8;
+  padding-bottom: 3em;
 }
 
 .hide {
