@@ -397,6 +397,11 @@
   padding-bottom: 2rem;
 }
 
+.projects__title {
+  font-size: 1.6rem;
+  margin-bottom: 1em;
+}
+
 .projects__bio-image {
   height: 20vh;
   width: 100%;
