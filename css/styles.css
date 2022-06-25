@@ -618,6 +618,7 @@
   font-style: italic;
   color: #08fdd8;
   padding-bottom: 3em;
+  text-shadow: 1px 2px 5px grey;
 }
 
 .hide {
