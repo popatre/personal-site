@@ -160,6 +160,10 @@
         text-align: center;
         text-decoration: underline;
         margin-top: 2em;
+
+        &--project__titles {
+            line-height: 1.5;
+        }
     }
 
     &__grid {

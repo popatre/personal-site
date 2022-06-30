@@ -591,6 +591,10 @@
   margin-top: 2em;
 }
 
+.projects__others__title--project__titles {
+  line-height: 1.5;
+}
+
 .projects__others__grid {
   display: -ms-grid;
   display: grid;
