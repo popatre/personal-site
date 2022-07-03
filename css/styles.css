@@ -431,6 +431,7 @@
 }
 
 .projects-items {
+  max-width: 1900px;
   width: 90vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
