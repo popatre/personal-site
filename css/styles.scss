@@ -66,9 +66,13 @@ footer {
     margin: 2em 0;
 }
 
-//   .add {
+.fade-in {
+    opacity: 0;
+    transition: opacity 350ms ease-in;
+}
 
-//     transform: scale(0.4) translateY(10em) translateX(50em);
-//   }
+.fade-in.appear {
+    opacity: 1;
+}
 
 @import "./responsive";
