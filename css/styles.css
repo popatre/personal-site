@@ -623,6 +623,7 @@ body {
   color: #fff;
   height: 100vh;
   line-height: 1;
+  overflow-x: hidden;
 }
 
 h1,
@@ -677,12 +678,30 @@ footer {
   margin: 2em 0;
 }
 
+/***  Intersection observer classes ***/
 .fade-in {
   opacity: 0;
   transition: opacity 350ms ease-in;
 }
 
 .fade-in.appear {
+  opacity: 1;
+}
+
+.move-right-starting {
+  transform: translateX(-100%);
+}
+
+.move-right-transition {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.75, -0.015, 0.565, 1.055);
+}
+
+.move-right-transition.appear {
+  transform: translateX(0);
+  transition-delay: calc(0.255s * var(--i));
   opacity: 1;
 }
 
