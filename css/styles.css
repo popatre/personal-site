@@ -18,14 +18,6 @@
 }
 /* Firefox < 16 */
 /* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* Internet Explorer */
 /* Opera < 12.1 */
 .home {
@@ -48,16 +40,7 @@
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   opacity: 1;
-  -webkit-animation: fade 4s ease-in;
-          animation: fade 4s ease-in;
-}
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fade 4s ease-in;
 }
 @keyframes fade {
   0% {
@@ -69,8 +52,7 @@
 }
 .home h2 .myname {
   opacity: 1;
-  -webkit-animation: fade 10s ease-in;
-          animation: fade 10s ease-in;
+  animation: fade 10s ease-in;
 }
 .home__name {
   font-size: 5rem;
@@ -87,8 +69,7 @@
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   visibility: hidden;
-  -webkit-animation: fade 10s ease-in;
-          animation: fade 10s ease-in;
+  animation: fade 10s ease-in;
 }
 .home .social-icons a {
   margin-left: 1.9rem;
@@ -96,15 +77,6 @@
 
 #tester {
   visibility: hidden;
-}
-
-@-webkit-keyframes bg-animate {
-  0% {
-    background-position: left;
-  }
-  100% {
-    background-position: right;
-  }
 }
 
 @keyframes bg-animate {
@@ -125,20 +97,7 @@
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
-  -webkit-animation: animateColor 5s linear infinite;
-          animation: animateColor 5s linear infinite;
-}
-
-@-webkit-keyframes animateColor {
-  0% {
-    filter: saturate(0);
-  }
-  50% {
-    filter: saturate(1);
-  }
-  100% {
-    filter: saturate(0);
-  }
+  animation: animateColor 5s linear infinite;
 }
 
 @keyframes animateColor {
@@ -373,8 +332,7 @@
   width: 100%;
   background: linear-gradient(-45deg, #178c7a, #343232, #08fdd8, #000000);
   background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease 1;
-          animation: gradient 15s ease 1;
+  animation: gradient 15s ease 1;
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
@@ -565,18 +523,6 @@
 .projects__item.special::after {
   top: 0;
   opacity: 0.9;
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 @keyframes gradient {
