@@ -2,7 +2,7 @@
 
 This is my personal portfolio website.
 
-A live version can be found: https://jonmcg.co.uk
+A live version can be found: https://jonmcg.dev/
 
 It makes use of the following:
 
