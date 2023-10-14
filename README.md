@@ -1,5 +1,7 @@
 # Jonathan McGuire - Personal Portfolio Site
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/50cc3fcc-d5ab-45f4-9c1b-fa7c8685f75b/deploy-status)](https://app.netlify.com/sites/zen-jennings-d07036/deploys)
+
 This is my personal portfolio website.
 
 A live version can be found: https://jonmcg.dev/
