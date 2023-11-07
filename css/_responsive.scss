@@ -163,6 +163,17 @@
     .dev-subs {
         font-size: 2rem;
     }
+
+    .home {
+        .social-icons {
+            justify-content: flex-start;
+            //width: 10%;
+
+            a {
+                margin-left: 1.9rem;
+            }
+        }
+    }
 }
 
 @include media-xl {

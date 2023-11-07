@@ -61,8 +61,12 @@
         visibility: hidden;
         animation: fade 10s ease-in;
     }
-    .social-icons a {
-        margin-left: 1.9rem;
+
+    .social-icons {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        // max-width: 500px;
     }
 }
 

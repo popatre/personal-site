@@ -71,8 +71,10 @@
   visibility: hidden;
   animation: fade 10s ease-in;
 }
-.home .social-icons a {
-  margin-left: 1.9rem;
+.home .social-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 #tester {
@@ -777,6 +779,12 @@ footer {
   }
   .dev-subs {
     font-size: 2rem;
+  }
+  .home .social-icons {
+    justify-content: flex-start;
+  }
+  .home .social-icons a {
+    margin-left: 1.9rem;
   }
 }
 @media screen and (min-width: 1600px) {
